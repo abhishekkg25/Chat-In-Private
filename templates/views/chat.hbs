@@ -4,13 +4,14 @@
 <head>
     <title>Chat App</title>
     <link rel="icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.min.css">
+     <link rel="stylesheet" href="/css/styles1.css">
 </head>
 
 <body>
+    <div class="main-content">
     <div class="chat">
         <div id="sidebar" class="chat__sidebar">
-
         </div>
         <div class="chat__main">
             <div id="messages" class="chat__messages"></div>
@@ -21,11 +22,11 @@
                     <button>Send</button>
                 </form>
                 <button id="send-location">Send location</button>
-                <button id="send-location1">Share Group link</button>
+                <button id="send-location">Share Group link</button>
             </div>
         </div>
     </div>
-
+</div>
     <script id="message-template" type="text/html">
             <div class="message">
                 <p>
@@ -61,6 +62,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/chat.js"></script>
+
+    {{>footer}}
 </body>
 
 </html>

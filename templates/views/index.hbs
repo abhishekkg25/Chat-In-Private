@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Chat App</title>
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/styles1.css">
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        Number of users online in the App: {{numberOfUsers}}
+       <div class="centered-form">
+           
+                <p><b><u>Features:</u></b></p> 
+                <p>1) Simple to use.</p>
+                <p>2) All messages are end to end encrypted. </p>
+                <p>3) Chats get disappeared when all leaves.</p> 
+                <p>4) Chats can't be screenshot.</p> 
+                <p>5) Images can't be downloaded or screenshot</p> 
+           
+        </div>
+
+        Click on the Join tab room to join the room and chit chat with friends.
+    </div>
+    
+    {{>footer}}
+</body>
+
+</html>
